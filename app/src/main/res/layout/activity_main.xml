@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:padding="24dp"
+android:gravity="center"
+android:background="#F5F7FA"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<!-- Title -->
+<TextView
+    android:text="Social Spark "
+    android:textSize="26sp"
+    android:textStyle="bold"
+    android:textColor="#2C3E50"
+    android:layout_marginBottom="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<!-- Input Card -->
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:elevation="6dp"
+    android:layout_marginBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:hint="Enter time (Morning, Afternoon...)"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+<!-- Suggest Button -->
+<Button
+    android:id="@+id/buttonSuggest"
+    android:text="Get Suggestion"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#4CAF50"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"/>
+
+<!-- Result Card -->
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF"
+    android:elevation="6dp"
+    android:layout_marginBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:text="Your social spark will appear here"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+<!-- Reset Button -->
+<Button
+    android:id="@+id/buttonReset"
+    android:text="Reset"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#E53935"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>
